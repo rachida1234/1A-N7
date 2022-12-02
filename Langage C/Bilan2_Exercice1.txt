@@ -1,0 +1,27 @@
+Indiquer vos réponses aux questions de l'exercice 1 du Bilan 2 ci-après : 
+
+[B1.1] Quelle est la portée de chaque variable déclarée ? Pour chaque variable, on donnera le numéro de ligne où commence et se termine sa portée.
+n : variable globale [8-37]
+p : variable globale [9-37]
+a : variable locale [13-17]
+n : variable locale [22-25]
+r : variable locale [30-33]
+
+
+[B1.2] Y a-t-il un exemple de masquage de variable dans ce programme ?
+
+Oui la variable n déclarée en ligne 8 est masquée par celle déclarée en ligne 22.
+
+
+[B1.3] Peut-on savoir ce que devrait afficher l’exécution de ce programme ?
+Non, le comportement du processeur est indeterminé.
+
+[B1.4] Même s’il compile sans erreur, ce programme est faux. Pourquoi ?
+à cause du 2 ème bloc on a changé la valeur d'une variable globale (p) et donc à la sortie du 2ème bloc le pointeur p ne pointe plus sur une zone mémoire vide et il se peut que ce dernier pointe sur une zone mémoire déjà allouée.
+
+[B1.5] La valeur de `p` change-t-elle après l’initialisation de la ligne 14 ?
+Oui la valeur change car c'est un passage par adresse,l'utilisation des pointeurs est la seule façon pour modifier les valeurs.
+
+
+[B1.6] Que se passerait-il si on modifiait `*p` après la ligne 19 ?
+le programme s'arrete .
