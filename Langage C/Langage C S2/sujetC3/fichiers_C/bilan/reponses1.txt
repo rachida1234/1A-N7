@@ -1,0 +1,24 @@
+Dans ce fichier `reponses1.txt`, 
+
+
+[Question 1.1] Indiquer 
+- comment obtenir le ou les exécutables par compilation séparée.
+ On lance dans le terminal la commande "c99 -Wextra -pedantic -c  *.c " pour créer les fichiers objet
+ puis la commande " c99  exemple_file.o test_file.o -o main"pour l'édition des liens.
+
+- les dépendances entre les fichiers qui constituent l’application.
+la cible test_file dépend de file.o et test_file.o
+la cible exemple_file dépend de file.o et exemple_file.o
+
+- le rôle de la règle `.PHONY` dans Makefile.
+grace à '.PHONY' make n'ira pas vérifier si le fichier clean existe avant d'exécuter la règle.
+
+[Question 1.5] Indiquer
+- Quel est le sous-programme non-visible des autres modules et défini dans le module File.
+ la fonction cellule(char valeur, Cellule *suivante) car elle est precédée par 'static'
+
+- Que se passe-t-il si on enlève le mot-clé static à la compilation ?  
+ Rien ne se passe à la compilation
+
+- Quel est le risque de ne pas le mettre ?
+On changera la portée de la fonction et donc l'utilisateur pourra l'utiliser à partir d'autres fichiers alors qu'il n'est pas censé le faire .
