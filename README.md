@@ -4,6 +4,6 @@ In this repository, you will find all projects done during my 1st year at Enseei
 
 Contents : 
 
-   1st Semester projects
+  1- 1st Semester projects
    
-   2nd Semester projects
+  2- 2nd Semester projects
