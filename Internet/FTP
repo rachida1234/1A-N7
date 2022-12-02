@@ -1,0 +1,27 @@
+#!/bin/bash
+ip link set dev eth0 up
+ip addr add 129.27.249.195/26 dev eth0
+
+ip route add default via 129.27.249.193 dev eth0
+
+#Create user
+useradd rachida
+#createuser password
+echo "rachida:rachida"|chpasswd
+#create the user's home directory 
+mkdir rachida /home/rachida
+usermod --shell /bin/bash rachida
+
+#launch FTP server
+hostname FTP
+echo "129.27.249.195 FTP" >> /etc/hosts
+#disable world writable mode :
+chmod o-w /etc/proftpd/ etc/proftpd/modules.conf etc/proftpd/proftpd.conf
+
+#start proftpd service
+service proftpd start
+
+TMP=" your file is transfered successfully"
+echo -e "$TMP" >> /home/rachida/message.txt
+
+
