@@ -1,0 +1,37 @@
+Nom       : Oussakel
+Prénom    : Rachida
+Groupe TP : K
+
+
+Consigne :  Ci-dessous, répondre à la place des « ... ».
+
+
+=====[ Temps ]==================================================================
+
+Temps passé sur la V1 : 1 heures 20 minutes
+Temps passé sur la V2 : 3 heures 00 minutes
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+Bien sûr, les temps renseignés ici ne sont pas pris en compte dans la notation.
+
+
+=====[ Questions ]==============================================================
+
+Indiquer la relation UML entre Cercle et le Point centre du cercle.
+-------------------------------------------------------------------
+Le cercle dépend de la classe point,si on modifie le centre ,le cercle se modifie à son tour,donc c'est une relation de dépendance ,plus precisemment c'est une relation de composition.
+...
+
+
+Comment est réalisée l'exigence E18 ?
+-------------------------------------
+pour ne pas pouvoir changer les paramètres du cercle qu'en passant par les méthodes de la classe,il ne faut pas que le centre du cercle et le point donné en paramètre pointent sur la meme zone mémoire .Ainsi, à chaque fois qu'on donne le centre en paramètre à une méthode il faut le copier dans un autre poigné et donc on aura deux zones mémoires différentes, ainsi la modification du point n'engendra pas la modification des caractéristiques du cercle.
+...
+
+
+
+=====[ Explications ]===========================================================
+
+(Facultatif) Donner ici les explications supplémentaires utiles à la
+compréhension du travail rendu.
+
+...
