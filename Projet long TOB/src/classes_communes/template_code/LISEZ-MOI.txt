@@ -1,0 +1,3 @@
+% Ce dossier fournit un template de ce qui peut être attendu en terme
+% de javadoc en tête de classe // méthode, de syntaxe pour les 
+% attributs/méthodes/nomClasse, l'ordre des methodes get..set..
